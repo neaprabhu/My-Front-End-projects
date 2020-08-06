@@ -35,3 +35,5 @@ This project is all about the concept of persistent and event delegation
     * One thing to watch for in the code is that the <input> and <label> are bound together with the "for = " attribute in the label 
 
       * <label for="item${i} " - this line will match the id of the input to the for of the label 
+
+<img src="preview.png">
