@@ -1,0 +1,32 @@
+<!-- Going to attempt the CSS Variable Booth project again from scratch -->
+
+<html>
+    <head>
+        <title>Revision: My CSS Variable Booth 💩</title>
+        <link rel="stylesheet" type="text/css" href="booth.css">
+    </head>
+    <body>
+        <main class="booth">
+            <aside class="slider">
+                <label>Hello!</label>
+                <label>Move this 👉</label>
+                <input class="booth-slider" type="range" min="-50" max="50" value="0" step="5">
+            </aside>
+
+            <section class="color-boxes">
+                <div class="color-box" id="1"><input value="red"/></div>
+                <div class="color-box" id="2"><input/></div>
+                <div class="color-box" id="3"><input/></div>
+                <div class="color-box" id="4"><input/></div>
+                <div class="color-box" id="5"><input/></div>
+                <div class="color-box" id="6"><input/></div>
+            </section>
+
+            <footer class="instructions">
+                👉 Move the slider <br/>
+                👉 Write any color in the red boxes
+            </footer>
+        </main>
+    </body>
+    <script src="cssBooth.js"></script>
+</html>
