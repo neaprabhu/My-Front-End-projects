@@ -5,7 +5,7 @@ Some notes:
 * A grid item can be a flexbox container and a flexbox item can be a grid container
 
 
-![Large Screen Interface](LargeScreen.png)
+![Large Screen Interface](LargeScreen.PNG)
 
-![Mobile Interface](MobileScreen.png)
+![Mobile Interface](MobileView.PNG)
 
