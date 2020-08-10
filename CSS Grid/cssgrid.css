@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+default grid setup for mobile first
+========================*/
+body {
+    display:grid;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-rows: 1fr 90px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content"
+                        "footer";
+
+}
+
+.main {
+    grid-area: content;
+    background-color: #457b9d;
+}
+
+.main__header > .img {
+    grid-area: img;
+}
+
+.main_header > .details {
+    grid-area: dtls;
+}
+
+.main__header {
+    display: grid;
+    grid-template-areas: "img"
+                        "dtls";
+    background-color: #1d3557; 
+}
+
+
+
+.main__body > div {
+    display:flex;
+}
+
+.main__body > div p {
+    flex: 0 0 25%
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.details div:nth-child(1) {
+    margin-bottom: auto;
+}
+
+.details div:nth-child(2) {
+    margin-top: 0;
+}
+
+.details div:nth-child(2) i.fa {
+    font-size: 0.9em;
+    padding: 0 0.7em;
+    font-weight: 300;
+}
+
+.details div:nth-child(1) p:first-child {
+    font-size: 1.8em;
+    margin 0 0 10px;
+}
+
+.details div:nth-child(1) p:not(:first-child) {
+    font-size: 0.9em;
+    margin: 2px 0;
+}
+
+.main__body > div {
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.main__body > div:nth-child(even) {
+    background-color: #a8dadc 
+}
+
+
+/* For Mobile Screens */
+@media screen and (max-width:600px) {
+    .main__header {
+        justify-items:center;
+    }
+
+    .main__header > .details {
+        text-align:center;
+    }
+
+    .sm--hide {
+        display:none;
+    }
+
+    .img > img {
+        width: 150px;
+    }
+
+    .main__body > div p {
+        flex: 0 0 50%;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1d3557;
+}
+
+.aside i {
+    display: none;
+}
+
+.aside {
+    grid-area: sidebar;
+    background-color: #f1faee;
+}
+
+/*==============================
+Larger Screens
+================================*/
+
+@media only screen and (min-width: 600px) {
+    body {
+    
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: "sidebar content"
+                                "footer footer";
+        
+    }
+
+    .aside {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside i {
+        display: block;
+        
+    }
+
+    .main__header {
+        grid-template-columns: 250px 1fr;
+        grid-template-areas: "img dtls";
+    }
+}
