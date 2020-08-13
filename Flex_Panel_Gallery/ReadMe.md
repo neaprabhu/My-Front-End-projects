@@ -20,3 +20,7 @@ Project 4 - Flex Image Project
 	• Now to basically put the whole thing together we need add JavaScript that will listen for a click and a transitionend event to each panel
 		○ On click it will make the flex = 5
   * On 'transitionend' it will bring it the upper text from the top and the lower text from the bottom
+
+![Interface](UI.PNG)
+
+![Interface](UI1.PNG)
