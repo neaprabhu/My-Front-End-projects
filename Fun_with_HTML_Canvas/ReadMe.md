@@ -26,4 +26,4 @@ Challenge 7 - HTML Canvas
     Mouseout because if we press down and leave the canvas and come back in, then it should not start drawing again when we are back on the canvas  
     
     
-    ![Interface](UI.PNG)
+![Interface](UI.PNG)
